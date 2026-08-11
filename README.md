@@ -13,11 +13,11 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 * **Team Compositions:** 3 robots per team (built by 3 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
 * **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
 * **Offensive Weapons:** Active mechanisms (e.g., servo-driven sweeping arms) are permitted within strict length constraints.
-* **Communication Penalty:** To discourage continuous manual driving, every transmitted RC packet deducts **-1 HP** from the bot's health pool.
+* **Communication Penalty:** RC-mode is meant for emergencies/manual corrections. To discourage continuous manual driving, every transmitted RC packet deducts **-1 HP** from the bot's health pool.
 
 ---
 
-## Winning Strategy: Loopholes
+## Winning Strategy: "Creative Exploitations"
 
 > *"It’s not what the rule book says, it is what the rule book doesn't say that's important."*  
 > — **Gordon Murray**
@@ -25,8 +25,8 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 Our strategy focused on identifying rule loopholes and specifically engineering around them legally: **RC health penalty** and the **tower hazard radius**.
 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
-* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 10 packets/sec), which would drain a bot's total HP within 10 seconds. Conversely, autonomous navigation suffered from unreliable arena localization.
-* **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`keydown` / `keyup`).
+* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), which would drain a bot's total HP ~3 seconds. Conversely, autonomous navigation suffered from unreliable arena localization (Ruleset limitation + arena design flaw).
+* **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`).
 * **The Impact:** A complete directional maneuver required only 2 packets (start/stop) instead of dozens. This gave us a budget of over 50 discrete maneuvers per respawn, eliminating the need for fragile autonomous pathfinding while maintaining near-zero HP penalty.
 
 ### 2. High-Torque Closed-Loop Drive (Ramp & Pushing Dominance)
