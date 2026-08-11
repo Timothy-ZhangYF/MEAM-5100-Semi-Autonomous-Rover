@@ -34,7 +34,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 * **The Solution:** Deploying a passive, weighted "Brick" to hold down the button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
 * **The Impact:** Once the brick was deployed, our robot faced zero risk from base defenses and zero attack downtime. Furthermore, the robot was immediately freed up to capture the center tower for secondary chip damage—achieving the theoretical fastest time-to-kill (TTK) in the competition.
 
-### 3. High-Torque Closed-Loop Drive
+#### 2.1 High-Torque Closed-Loop Drive (Engineered for Payload & Ramp Climbing)
 * **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying our added payload weight, standard brushed DC motors would stall or slip.
 * **The Solution:** We selected high-gear-ratio motors and implemented a custom **encoder-based closed-loop PID speed controller**.
 * **The Impact:** Maintained maximum available torque at low rotational speeds, preventing tire slippage and enabling high-traction positional control. When colliding with an opponent, our closed-loop controller automatically adjusted PWM to maintain target wheel RPM, completely overpowering open-loop, high-speed drives that stalled on contact.
