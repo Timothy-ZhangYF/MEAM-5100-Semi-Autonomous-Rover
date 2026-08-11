@@ -41,7 +41,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 
 ---
 
-## 🛠 Strategic Evolution: "Brick 2.0"
+## 🛠 Strategic Evolution: "Brick 2.0" (Outsourcing Payload to the Enemy)
 
 ### The Unexpected Hardware Failure
 A few days before the final matches, a power surge burned out our voltage regulators, requiring an emergency system rebuild. To avoid risking the replacement hardware under the added electrical load of a mechanical deployment mechanism, we had to bench the physical brick mechanism right before match day.
