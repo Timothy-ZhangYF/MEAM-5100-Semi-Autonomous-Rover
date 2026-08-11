@@ -27,11 +27,11 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
 * **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), which would drain a bot's total HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable arena localization due to ruleset and arena design flaws.
 * **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`). Using WASD controls for general piloting, pre-programmed complex subroutines (such as wall-following or dead-reckoning straight to the opponent tower) could be activated with a single packet.
-* **The Impact:** A complete directional maneuver required only 2 packets (start/stop) instead of dozens, giving us a budget of over 50 discrete maneuvers per respawn. Combining pre-programmed commands with manual piloting, we consistently reached the opponent base tower using fewer than 10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
+* **The Impact:** A complete directional maneuver required only 2 packets (start/stop), giving us a budget of over 50 discrete maneuvers per respawn. Combining pre-programmed commands with manual piloting, we consistently reached the opponent base tower using <10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
 
 ### 2. The Deployable "Brick" Concept
-* **The Constraint:** To avoid the tower defense radius, a robot must either continuously dodge or tank heavy damage and respawn—both of which cause massive attack downtime.
-* **The Solution:** Deploying a passive, weighted "Brick" to hold down the nexus button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
+* **The Constraint:** To avoid the tower defense radius, a robot must either continuously dodge or tank heavy damage and respawn, both of which cause massive attack downtime.
+* **The Solution:** Deploying a passive, weighted "Brick" to hold down the button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
 * **The Impact:** Once the brick was deployed, our robot faced zero risk from base defenses and zero attack downtime. Furthermore, the robot was immediately freed up to capture the center tower for secondary chip damage—achieving the theoretical fastest time-to-kill (TTK) in the competition.
 
 ### 3. High-Torque Closed-Loop Drive
