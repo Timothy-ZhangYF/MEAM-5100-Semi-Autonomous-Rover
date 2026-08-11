@@ -22,7 +22,7 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 > *"It’s not what the rule book says, it is what the rule book doesn't say that's important."*  
 > — **Gordon Murray**
 
-Our strategy focused on identifying rule loopholes to legally bypass system limitations—specifically engineering around the **RC health penalty** and the **tower hazard radius**.
+Our strategy focused on identifying rule loopholes and specifically engineering around them legally: **RC health penalty** and the **tower hazard radius**.
 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
 * **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 10 packets/sec), which would drain a bot's total HP within 10 seconds. Conversely, autonomous navigation suffered from unreliable arena localization.
