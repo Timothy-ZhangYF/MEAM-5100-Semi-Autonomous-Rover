@@ -44,11 +44,11 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 ## 🛠 Strategic Evolution: "Brick 2.0" (Outsourcing Payload to the Enemy)
 
 ### The Unexpected Hardware Failure
-A few days before the final matches, a power surge burned out our voltage regulators, requiring an emergency system rebuild. To avoid risking the replacement hardware under the added electrical load of a mechanical deployment mechanism, we had to bench the physical brick mechanism right before match day.
+A few days before the final matches, a power surge released the magic blue smoke from our voltage regulators, requiring an emergency system rebuild. To avoid risking the replacement hardware under the added electrical load of a mechanical deployment mechanism, we had to bench the physical brick mechanism right before match day. 
 
 ### Competition Adaptation: The "Human Shield" Tactic
-Without the physical payload, we adapted our high-torque drive and precise, low-packet teleoperation into an offensive grappling strategy—turning enemy bots into our replacement "brick":
+Without the physical payload, we adapted our high-torque drive and low-packet teleoperation into an aggressive grappling strategy. If we couldn't deploy a brick, we would turn enemy bots into interactive, non-consensual bricks. A bag of nuts and bolts for extra traction ballast dramatically increased this effectiveness.
 
 1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, overpowered their traction, and pushed them backward into their own base.
 2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
-3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the *opponent* repeatedly instead of us, turning their base defense system into self-inflicted damage.
+3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent instead of us, forcing our opponents into the unique humiliation of being beaten to death by their own tower while pinned to their own base.
