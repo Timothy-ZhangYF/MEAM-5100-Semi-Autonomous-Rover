@@ -50,5 +50,5 @@ A few days before the final matches, a power surge burned out our voltage regula
 Without the physical payload, we adapted our high-torque drive and precise, low-packet teleoperation into an offensive grappling strategy—turning enemy bots into our replacement "brick":
 
 1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, overpowered their traction, and pushed them backward into their own base.
-2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own nexus.
+2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
 3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the *opponent* repeatedly instead of us, turning their base defense system into self-inflicted damage.
