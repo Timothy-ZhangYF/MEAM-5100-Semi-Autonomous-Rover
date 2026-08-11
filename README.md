@@ -1,45 +1,49 @@
 # Semi-Autonomous Arena PvP Battlebot
 
-A semi-autonomous robot engineered for a 3v3 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
+An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
 
 ---
 
-## Game Concept & Arena Rules
+## 🎮 Game Concept & Arena Rules
 
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
-* **Base Towers:** Each team has a home base with physical buttons, which would damage the base HP when depressed.
-* **Tower Damage:** the base buttons are guarded by a continuously slow spinning physical arm that feature an unavoidable attack radius.
-* **Neutral Objective:** A central middle tower can be captured to execute automated, risk-free chip damage against the opponent's base.
-* **Team Compositions:** 3 robots per team operating under autonomous routines, remote control (RC), or hybrid modes.
-* **Target & Hit Detection:** Each robot is equipped with a designated target zone—an exposed physical whisker switch. Any physical strike to this switch deducts HP.
-* **Offensive Weapons:** Robots can equip active physical attack mechanisms (such as a servo-driven sweeping arm), subject to strict length limit constraints.
-* **Communication Penalty:** To discourage over-reliance on manual operation, each transmitted remote control data packet deducts **-1 HP**.
-
-## Winning Strategy
-As legendary Formula 1 designer Gordon Murray once said, "It’s not what the rule book says, it is what the rule book doesn't say that's important." Our strategy follows exactly this philosophy.
-
-
-
-
-## 🛠 Hardware Architecture
-
-* **Microcontroller:** ESP32-S3 (Station Mode Wi-Fi + I2C master)
-* **Actuators:** 2× 12V Pololu 37Dx68L Metal Gearmotors (30:1 Gear Ratio, 330 RPM) + MG996R Servo (Arm)
-* **Motor Driver:** DROK L298 Dual H-Bridge (7A continuous per channel)
-* **Sensors:** 3× Adafruit VL53L1X Time-of-Flight (ToF) Distance Sensors (Front, Left, Right)
-* **Power System:** 3S 11.1V 2200mAh 35C LiPo Battery + SparkFun 5V/2A Buck-Boost Converter
-* **Chassis & Frame:** Laser-cut 1/8" MDF T-slot modular box frame with low center of gravity
-* **Health Interface:** Custom Top Hat system interfaced via I2C for real-time HP reporting
+* **Base Towers:** Each team's base is surrounded by physical buttons. Depressing an opponent's  button deducts base HP.
+* **Tower Hazards:** Base buttons are guarded by a slowly spinning, high-damage physical arm that enforces an unblock-able attack radius.
+* **Neutral Objective:** A central tower can be captured to deal automated, risk-free chip damage to the opponent's base.
+* **Team Compositions:** 3 robots per team (built by 3 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
+* **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
+* **Offensive Weapons:** Active mechanisms (e.g., servo-driven sweeping arms) are permitted within strict length constraints.
+* **Communication Penalty:** To discourage continuous manual driving, every transmitted RC packet deducts **-1 HP** from the bot's health pool.
 
 ---
 
-## 💻 Software & Firmware Highlights
+## Winning Strategy: Loopholes
 
-* **Closed-Loop Speed Control:** Implemented PID loop controls on motor encoders to maintain precise wheel RPM across heavy load and pushing states.
-* **Autonomous Wall-Following:** Closed-loop PID navigation using left and front ToF distance sensors. Includes reading clamping algorithms (`INFINITE` range handling) to reject noise when pointing into open arena spaces.
-* **Synchronized I2C Bus Management:** Configured dual-device I2C timing pipelines to handle high-speed ToF sensor polling alongside 40kHz Top Hat referee communications without bus lockups.
-* **Low-Latency Teleoperation UI:** Integrated HTML/JavaScript keypress event listeners communicating directly over Wi-Fi sockets.
+> *"It’s not what the rule book says, it is what the rule book doesn't say that's important."*  
+> — **Gordon Murray**
+
+Our strategy focused on identifying rule loopholes to legally bypass system limitations—specifically engineering around the **RC health penalty** and the **tower hazard radius**.
+
+### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
+* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 10 packets/sec), which would drain a bot's total HP within 10 seconds. Conversely, autonomous navigation suffered from unreliable arena localization.
+* **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`keydown` / `keyup`).
+* **The Impact:** A complete directional maneuver required only 2 packets (start/stop) instead of dozens. This gave us a budget of over 50 discrete maneuvers per respawn, eliminating the need for fragile autonomous pathfinding while maintaining near-zero HP penalty.
+
+### 2. High-Torque Closed-Loop Drive (Ramp & Pushing Dominance)
+* **The Constraint:** To climb the arena ramps and overpower opponents in collisions, standard cheap brushed DC motors typically stall or slip.
+* **The Solution:** We selected high-gear-ratio motors (30:1 reduction) and implemented a custom **encoder-based closed-loop PID controller**.
+* **The Impact:** Maintained maximum available torque at low rotational speeds, preventing tire slippage and enabling precise, high-traction positional control.
 
 ---
 
-## 📸 System Schematics & Diagrams
+## 🛠 Strategic Evolution: "Brick" to "Human Shield"
+
+
+### The Initial Plan: The Deployable "Brick"
+Our original concept was to carry a weighted payload up the ramp and drop it onto the opponent's base button. This would trigger continuous nexus damage without requiring our bot to remain in the hazard zone or expend HP (abandoned due to late-stage hardware repairs and assembly time constraints).
+
+### The Adaptation: "Brick 2.0" (The Human Shield Tactic)
+During competition matches, we adapted our high-torque drive and precise teleoperation into an offensive grappling strategy:
+1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots and pushed them backward into their own base.
+2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own nexus.
+3. **Friendly Fire Exploitation:** By holding the enemy bot in place, the spinning tower arm struck the *opponent* repeatedly instead of us, turning their defense system into self-inflicted damage.
