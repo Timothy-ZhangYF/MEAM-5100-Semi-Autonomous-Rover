@@ -32,7 +32,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 ### 2. The Deployable "Brick" Concept
 * **The Constraint:** To avoid the tower defense radius, a robot must either continuously dodge or tank heavy damage and respawn, both of which cause massive attack downtime.
 * **The Solution:** Deploying a passive, weighted "Brick" to hold down the button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
-* **The Impact:** Once the brick was deployed, our robot faced zero risk from base defenses and zero attack downtime. Furthermore, the robot was immediately freed up to capture the center tower for secondary chip damage—achieving the theoretical fastest time-to-kill (TTK) in the competition.
+* **The Impact:** Once the brick was deployed, our robot faced zero risk from base defenses and zero attack downtime. Furthermore, the robot was immediately freed up to capture the center tower for secondary chip damage—achieving the theoretical fastest time-to-kill (TTK) in the competition. Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away would be an instantly demoralizing offensive play.
 
 #### 2.1 High-Torque Closed-Loop Drive (Engineered for Payload & Ramp Climbing)
 * **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying our added payload weight, standard brushed DC motors would stall.
