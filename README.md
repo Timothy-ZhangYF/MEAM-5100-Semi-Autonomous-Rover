@@ -25,7 +25,7 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 Our strategy focused on identifying rule loopholes and specifically engineering around them legally: the **RC health penalty** and the **tower hazard radius**.
 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
-* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), which would drain a bot's total HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable arena localization due to ruleset limits and arena optical interference.
+* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), which would drain a bot's total HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable arena localization due to ruleset and arena design flaws.
 * **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`). Using WASD controls for general piloting, pre-programmed complex subroutines (such as wall-following or dead-reckoning straight to the opponent tower) could be activated with a single packet.
 * **The Impact:** A complete directional maneuver required only 2 packets (start/stop) instead of dozens, giving us a budget of over 50 discrete maneuvers per respawn. Combining pre-programmed commands with manual piloting, we consistently reached the opponent base tower using fewer than 10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
 
