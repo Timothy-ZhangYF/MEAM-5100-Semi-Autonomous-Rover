@@ -9,7 +9,6 @@ An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP 
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
 * **Base Towers:** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
 * **Tower Hazards:** Base buttons are guarded by a long slowly spinning, high-damage physical arm.
-* **Neutral Objective:** A central tower can be captured to deal chip damage to the opponent's base.
 * **Team Compositions:** 3 robots per team (built by 3 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
 * **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
 * **Offensive Weapons:** Active mechanisms (e.g., servo-driven sweeping arms) are permitted within strict length constraints.
@@ -32,7 +31,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 ### 2. The Deployable "Brick" Concept (aka "Tactical Excrement")
 * **The Constraint:** To avoid the tower defense radius, a robot must either continuously dodge or tank heavy damage and respawn. Both of which cause massive attack downtime.
 * **The Solution:** Deploying a literal "Brick" to hold down the button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
-* **The Impact:** With the brick deployed, our robot faced zero risk from base defenses and zero attack downtime. Furthermore, the robot was immediately freed up to capture the center tower for secondary chip damage, achieving the theoretical fastest time-to-kill (TTK). Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away while opponents stood by helplessly was easily the most demoralizing offensive play.
+* **The Impact:** With the brick deployed, our robot faced zero risk from base defenses and zero attack downtime, achieving the theoretical fastest time-to-kill (TTK). Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away while opponents stood by helplessly was easily the most demoralizing offensive play.
 
 #### 2.1 High-Torque Closed-Loop Drive (Engineered for Payload & Ramp Climbing)
 * **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying our added payload weight, standard brushed DC motors would stall.
