@@ -7,7 +7,7 @@ An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP 
 ## 🎮 Game Concept & Arena Rules
 
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
-* **Base Towers:** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
+* **Base Towers (Objective):** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
 * **Tower Hazards:** Base buttons are guarded by a long slowly spinning, high-damage physical arm.
 * **Team Compositions:** 3 robots per team (built by 3 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
 * **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
@@ -24,14 +24,14 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 Our strategy focused on identifying rule loopholes and specifically engineering around them legally: the **RC health penalty** and the **tower hazard radius**.
 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
-* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), draining a bot's HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable arena localization due to ruleset limits and arena design flaws.
-* **The Solution:** We replaced polling-based streaming with an **interrupt-based input architecture**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`). Using WASD controls for general piloting, pre-programmed complex subroutines (such as wall-following or dead-reckoning straight to the opponent tower) could be activated with a single packet.
-* **The Impact:** A complete directional maneuver required only 2 packets (start/stop), giving us a budget of over 50 discrete maneuvers per respawn. Combining pre-programmed commands with manual piloting, we consistently reached the opponent base tower using <10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
+* **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), draining a bot's HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable localization due to ruleset limits and arena design flaws.
+* **The Solution:** We replaced polling-based streaming with an **interrupt-based input**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`). Using WASD controls for general piloting, along with pre-programmed complex subroutines (such as wall-following or dead-reckoning straight to the opponent tower).
+* **The Impact:** A complete directional maneuver required only 2 packets (start/stop), giving us a budget of over 50 discrete maneuvers per respawn. Combining preset commands with manual piloting, we consistently reached the opponent base tower using <10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
 
-### 2. The Deployable "Brick" Concept (aka "Tactical Excrement")
-* **The Constraint:** To avoid the tower defense radius, a robot must either continuously dodge or tank heavy damage and respawn. Both of which cause massive attack downtime.
+### 2. The Deployable "Brick" Concept
+* **The Constraint:** To avoid the tower defense, a robot must either continuously dodge or tank heavy damage and respawn. Both of which cause attack downtime.
 * **The Solution:** Deploying a literal "Brick" to hold down the button, allowing the robot to exit the hazard zone immediately while risking at most a single hit from the tower arm.
-* **The Impact:** With the brick deployed, our robot faced zero risk from base defenses and zero attack downtime, achieving the theoretical fastest time-to-kill (TTK). Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away while opponents stood by helplessly was easily the most demoralizing offensive play.
+* **The Impact:** With the brick deployed, our robot faced zero risk from base defenses and zero attack downtime, achieving the theoretical fastest time-to-kill (TTK). Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away was easily the most demoralizing offensive play.
 
 #### 2.1 High-Torque Closed-Loop Drive (Engineered for Payload & Ramp Climbing)
 * **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying our added payload weight, standard brushed DC motors would stall.
@@ -50,4 +50,4 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, overpowered their traction, and pushed them backward into their own base.
 2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
-3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us—forcing our opponents into the unique humiliation of being beaten to death by their own tower while pinned to their own base.
+3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us; forcing our opponents into the unique humiliation of being beaten to death by their own tower while pinned to their own base.
