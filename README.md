@@ -1,7 +1,11 @@
 # Semi-Autonomous Arena PvP Battlebot
-[![Board](https://img.shields.io/badge/Board-ESP32S3-brightgreen)]()
-[![Controls](https://img.shields.io/badge/Controls-PID%20Closed--Loop%20Control-orange)]()
-[![Manufacturing](https://img.shields.io/badge/Manufacturing-Laser--Cutting-blue)]()
+[![Board](https://img.shields.io/badge/Board-ESP32--S3-brightgreen)](https://www.espressif.com/)
+[![Language](https://img.shields.io/badge/Language-C%2B%2B%20%7C%20C-00599C?logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![Controls](https://img.shields.io/badge/Controls-PID%20Closed--Loop-orange)]()
+[![Sensors](https://img.shields.io/badge/Sensors-VL53L1X%20ToF-yellow)]()
+[![Communication](https://img.shields.io/badge/Protocol-Interrupt--Driven%20Wi--Fi-informational)]()
+[![Manufacturing](https://img.shields.io/badge/Manufacturing-Laser--Cut%20MDF-blue)]()
+[![CAD](https://img.shields.io/badge/CAD-SolidWorks-red?logo=dassaultsystemes&logoColor=white)]()
 
 An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
 
