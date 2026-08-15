@@ -1,6 +1,6 @@
 # Semi-Autonomous Arena PvP Battlebot
 [![Board](https://img.shields.io/badge/Board-ESP32S3-brightgreen)]()
-[![Framework](https://img.shields.io/badge/ML-TensorFlow%20Lite%20Micro-orange)](https://www.tensorflow.org/lite/microcontrollers)
+[![Framework](https://img.shields.io/badge/Controlls-PID%20Closed-Loop%20Control-orange)](https://www.tensorflow.org/lite/microcontrollers)
 [![Model](https://img.shields.io/badge/Model-MobileNetV2%20%CE%B1%3D0.50-yellow)]()
 [![Accuracy](https://img.shields.io/badge/INT8%20Accuracy-99.74%25-blue)]()
 
