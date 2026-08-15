@@ -5,7 +5,7 @@
 [![Controls](https://img.shields.io/badge/Controls-PID%20Closed--Loop-orange)]()
 [![Manufacturing](https://img.shields.io/badge/Manufacturing-Laser--Cut%20MDF-yellow)]()
 
-An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
+An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
 
 ---
 
