@@ -10,7 +10,7 @@ An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP 
 ---
 
 ## Demo
-
+https://youtu.be/DXjDtMI1Nww
 
 ---
 
@@ -19,7 +19,7 @@ An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP 
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
 * **Base Towers (Objective):** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
 * **Tower Hazards:** Base buttons are guarded by a long slowly spinning, high-damage physical arm.
-* **Team Compositions:** 3 robots per team (built by 3 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
+* **Team Compositions:** 2 robots per team (built by 2 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
 * **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
 * **Offensive Weapons:** Active mechanisms (e.g., servo-driven sweeping arms) are permitted within strict length constraints.
 * **Communication Penalty:** RC mode is intended for emergency adjustments. To discourage continuous manual driving, every transmitted RC packet deducts **-1 HP** from the bot's health pool.
