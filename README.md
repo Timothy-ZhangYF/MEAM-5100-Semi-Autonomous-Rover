@@ -63,16 +63,17 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 <p align="center"><img src="Images/Block_Diagram.PNG" alt="Block Diagram" width="60%"></p>
 
 ### Electrical Wiring
-<p label="Wiring" align="center">
-  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="51%" />
-  <img src="Images/Disassembled1.PNG" alt="Wiring" width="47%" />
+<p align="center">
+  <strong>Electrical circuit diagram and physical wiring</strong><br><br>
+  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" style="width: 41.02%;" />
+  <img src="Images/Disassembled1.PNG" alt="Wiring" style="width: 41.02%;" />
 </p>
 
 
-### CAD drawings
+### CAD Drawings
 
 <p align="center">
-  <strong>CAD Drawings</strong><br><br>
+  <strong>CAD drawings for laser-cutting</strong><br><br>
   <img src="Images/CAD_drawing_1.png" alt="CAD1" style="width: 41.02%;" />
   <img src="Images/CAD_drawing_2.png" alt="CAD2" style="width: 48.98%;" />
 </p>
