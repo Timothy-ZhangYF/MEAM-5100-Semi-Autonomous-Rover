@@ -1,5 +1,5 @@
 # Semi-Autonomous Arena PvP Battlebot
-[![Board](https://img.shields.io/badge/Board-Seeed%20XIAO%20ESP32S3%20Sense-brightgreen)](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+[![Board](https://img.shields.io/badge/Board-ESP32S3-brightgreen)]()
 [![Framework](https://img.shields.io/badge/ML-TensorFlow%20Lite%20Micro-orange)](https://www.tensorflow.org/lite/microcontrollers)
 [![Model](https://img.shields.io/badge/Model-MobileNetV2%20%CE%B1%3D0.50-yellow)]()
 [![Accuracy](https://img.shields.io/badge/INT8%20Accuracy-99.74%25-blue)]()
