@@ -64,14 +64,14 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 ### Electrical Wiring
 <p label="Wiring" align="center">
-  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="51%" />
+  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="50%" />
   <img src="Images/Disassembled1.PNG" alt="Wiring" width="47%" />
 </p>
 
 
 ### CAD drawings
 <p label="CAD Drawings" align="center">
-  <img src="Images/CAD_drawing_1.png" alt="CAD1" width="45%" />
+  <img src="Images/CAD_drawing_1.png" alt="CAD1" width="44%" />
   <img src="Images/CAD_drawing_2.png" alt="CAD2" width="53%" />
 </p>
 
