@@ -34,9 +34,9 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 * **The Impact:** With the brick deployed, our robot faced zero risk from base defenses and zero attack downtime, achieving the theoretical fastest time-to-kill (TTK). Beyond optimal TTK, watching a robot cleanly "poop out" a dead-weight block onto a base button and casually drive away was easily the most demoralizing offensive play.
 
 #### 2.1 High-Torque Closed-Loop Drive (Engineered for Payload & Ramp Climbing)
-* **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying our added payload weight, standard brushed DC motors would stall.
+* **The Constraint:** To climb the arena ramps and overpower opponents in collisions while carrying additional payload weight, standard brushed DC motors would stall.
 * **The Solution:** We selected high-gear-ratio motors and implemented a custom **encoder-based closed-loop PID speed controller**.
-* **The Impact:** Maintained maximum available torque at low rotational speeds, preventing tire slippage and enabling high-traction positional control. When colliding with an opponent, our closed-loop controller automatically adjusted PWM to maintain target wheel RPM, completely overpowering open-loop, high-speed drives that stalled on contact.
+* **The Impact:** Maintained maximum available torque at low rotational speeds, preventing tire slippage and enabling high-traction control. When colliding with an opponent, our closed-loop controller automatically adjusted PWM to maintain target wheel RPM, completely overpowering open-loop, high-speed drives that stalled on contact.
 
 ---
 
@@ -50,4 +50,4 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, and pushed them wherever we wanted.
 2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
-3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us; forcing our opponents into the unique humiliation of being beaten to death by their own tower while pinned to their own base.
+3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us; forcing our opponents into the unique humiliation of being beaten to death by their own tower.
