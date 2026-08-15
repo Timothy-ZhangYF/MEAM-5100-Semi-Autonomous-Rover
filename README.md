@@ -16,6 +16,9 @@ specific rulesets and strategic highlights described in sections below
 
 https://youtu.be/5AlRQYtUSHg
 
+
+IMAGES PUT 
+
 ---
 
 ## Game Concept & Arena Rules
