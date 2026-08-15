@@ -64,8 +64,8 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 ### Electrical Wiring
 <p label="Wiring" align="center">
-  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="49%" />
-  <img src="Images/Disassembled1.PNG" alt="Wiring" width="45%" />
+  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="44%" />
+  <img src="Images/Disassembled1.PNG" alt="Wiring" width="40%" />
 </p>
 
 
