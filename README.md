@@ -65,8 +65,8 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 ### Electrical Wiring
 <p align="center">
   <strong>Electrical circuit diagram and physical wiring</strong><br><br>
-  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" style="width: 41.02%;" />
-  <img src="Images/Disassembled1.PNG" alt="Wiring" style="width: 41.02%;" />
+  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" style="width: 46.73%;" />
+  <img src="Images/Disassembled1.PNG" alt="Wiring" style="width: 43.27%;" />
 </p>
 
 
