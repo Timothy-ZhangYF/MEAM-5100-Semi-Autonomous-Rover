@@ -4,7 +4,7 @@ An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP 
 
 ---
 
-## 🎮 Game Concept & Arena Rules
+## Game Concept & Arena Rules
 
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
 * **Base Towers (Objective):** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
@@ -16,7 +16,7 @@ The competition takes place in a MOBA-style arena game (similar to *League of Le
 
 ---
 
-## ⚡ Core Winning Strategy: Rulebook Exploits
+## Core Winning Strategy: Rulebook Exploits
 
 > *"It’s not what the rule book says, it is what the rule book doesn't say that's important."*  
 > — **Gordon Murray**
@@ -40,7 +40,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 
 ---
 
-## 🛠 Strategic Evolution: "Brick 2.0" (Outsourcing Payload to the Enemy)
+## Strategic Evolution: "Brick 2.0" (Outsourcing Payload to the Enemy)
 
 ### The Unexpected Hardware Failure
 A few days before the final matches, a power surge released the magic smoke from our voltage regulators, requiring an emergency system rebuild. To avoid risking the replacement hardware under the added electrical load of a mechanical deployment mechanism, we had to bench the brick right before match day.
@@ -51,3 +51,11 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, and pushed them wherever we wanted.
 2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
 3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us; forcing our opponents into the unique humiliation of being beaten to death by their own tower.
+
+---
+
+## Design
+### System Block Diagram
+### Electrical Wiring Diagram
+### CAD drawings
+
