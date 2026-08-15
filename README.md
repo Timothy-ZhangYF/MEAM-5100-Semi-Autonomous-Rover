@@ -1,6 +1,6 @@
 # Semi-Autonomous Arena PvP Battlebot
 [![Board](https://img.shields.io/badge/Board-ESP32--S3-brightgreen)](https://www.espressif.com/)
-[![CAD](https://img.shields.io/badge/CAD-Onshape-blue?logo=onshape&logoColor=white)](https://www.onshape.com/)
+[![CAD](https://img.shields.io/badge/CAD-Onshape-blue)](https://www.onshape.com/)
 [![Language](https://img.shields.io/badge/Language-C%2B%2B%20%7C%20C%20%7C%20HTML-purple)]()
 [![Controls](https://img.shields.io/badge/Controls-PID%20Closed--Loop-orange)]()
 [![Manufacturing](https://img.shields.io/badge/Manufacturing-Laser--Cut%20MDF-yellow)]()
