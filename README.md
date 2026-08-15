@@ -64,6 +64,6 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 ### Electrical Wiring Diagram
 ![Data Collection Process](Images/Circuit_Diagram.PNG)
 ### CAD drawings
-![Data Collection Process](Images/CAD_drawing1.png)
-![Data Collection Process](Images/CAD_drawing2.png)
+![Data Collection Process](Images/CAD_drawing_1.png)
+![Data Collection Process](Images/CAD_drawing_2.png)
 
