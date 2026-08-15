@@ -48,6 +48,6 @@ A few days before the final matches, a power surge released the magic smoke from
 ### Competition Adaptation: The "Human Shield" Tactic
 Without the physical payload, we adapted our high-torque drive and low-packet teleoperation into an aggressive grappling strategy. If we couldn't deploy a brick, we would turn enemy bots into interactive, non-consensual bricks. (Pro-tip: Stuffing a bag of nuts and bolts inside the chassis dramatically increased this effectiveness):
 
-1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, overpowered their traction, and pushed them backward into their own base.
+1. **Grapple & Overpower:** Using our closed-loop torque advantage, we physically rammed into opposing bots, and pushed them wherever we wanted.
 2. **Pinned Traps:** We held enemy bots directly against their own base buttons, forcing them to trigger button damage on their own tower.
 3. **Friendly Fire Exploitation:** By holding the enemy bot in place on the button, the spinning tower arm struck the opponent repeatedly instead of us; forcing our opponents into the unique humiliation of being beaten to death by their own tower while pinned to their own base.
