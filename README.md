@@ -1,8 +1,6 @@
 # Semi-Autonomous Arena PvP Battlebot
 [![Board](https://img.shields.io/badge/Board-ESP32S3-brightgreen)]()
-[![Controls](https://img.shields.io/badge/Controls-PID%20Closed-Loop%20Control-orange)]()
-[![Model](https://img.shields.io/badge/Model-MobileNetV2%20%CE%B1%3D0.50-yellow)]()
-[![Accuracy](https://img.shields.io/badge/INT8%20Accuracy-99.74%25-blue)]()
+[![Controls](https://img.shields.io/badge/Controls-PID%20Closed--Loop%20Control-orange)]()
 
 An autonomous and remote-controlled combat robot engineered for a 3v3 arena PvP battle game. Built on an ESP32-S3 microcontroller, the platform combines closed-loop RPM feedback, low-overhead Wi-Fi teleoperation, time-of-flight obstacle sensing, and a high-torque differential drive chassis designed to dominate physical engagements.
 
@@ -67,8 +65,11 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 <p align="center"><img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="60%"></p>
 
 ### CAD drawings
+
 <p label="Model Training Metrics and Confusion Matrix" align="center">
   <img src="Images/CAD_drawing_1.png" alt="CAD1" width="42%" />
   <img src="Images/CAD_drawing_2.png" alt="CAD2" width="50%" />
 </p>
+
+Drawings for laser cut pieces, designed in Onshape
 
