@@ -10,6 +10,10 @@ An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP 
 ---
 
 ## Demo
+Finale of the battle where our team won in dominant fashion, taking overall first place. 
+
+specific ruleset and strategic highlights described in sections below
+
 https://youtu.be/DXjDtMI1Nww
 
 ---
@@ -19,6 +23,7 @@ https://youtu.be/DXjDtMI1Nww
 The competition takes place in a MOBA-style arena game (similar to *League of Legends*):
 * **Base Towers (Objective):** Each team's base is surrounded by physical buttons. Depressing an opponent's base button deducts base HP.
 * **Tower Hazards:** Base buttons are guarded by a long slowly spinning, high-damage physical arm.
+* **Center Capture Zones:** 2 center zones could be captured by teams, once captured, it deal automatic chip damage to opponent base.
 * **Team Compositions:** 2 robots per team (built by 2 separate student groups) operating under autonomous, remote control (RC), or hybrid modes.
 * **Hit Detection & Respawns:** Each robot carries an exposed whisker switch as its target zone. Strikes to this switch deduct HP; reaching 0 HP forces a timed respawn penalty.
 * **Offensive Weapons:** Active mechanisms (e.g., servo-driven sweeping arms) are permitted within strict length constraints.
@@ -36,7 +41,7 @@ Our strategy focused on identifying rule loopholes and specifically engineering 
 ### 1. Interrupt-Driven Teleoperation (Bypassing the Health Drain)
 * **The Constraint:** Standard RC controllers continuously stream motion packets at high frequencies (e.g., 30 packets/sec), draining a bot's HP in ~3 seconds. Conversely, fully autonomous navigation suffered from unreliable localization due to ruleset limits and arena design flaws.
 * **The Solution:** We replaced polling-based streaming with an **interrupt-based input**. Packets were transmitted *only* on keyboard event triggers (`key_press` / `key_release`). Using WASD controls for general piloting, along with pre-programmed complex subroutines (such as wall-following or dead-reckoning straight to the opponent tower).
-* **The Impact:** A complete directional maneuver required only 2 packets (start/stop), giving us a budget of over 50 discrete maneuvers per respawn. Combining preset commands with manual piloting, we consistently reached the opponent base tower using <10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us near-infinite piloting stamina.
+* **The Impact:** A complete directional maneuver required only 2 packets (start/stop), giving us a budget of over 50 discrete maneuvers per respawn. Combining preset commands with manual piloting, we consistently reached the opponent base tower using <10 packets (5 discrete commands). While this sacrificed continuous analog speed control, it gave us much longer piloting stamina.
 
 ### 2. The Deployable "Brick" Concept
 * **The Constraint:** To avoid the tower defense, a robot must either continuously dodge or tank heavy damage and respawn. Both of which cause attack downtime.
