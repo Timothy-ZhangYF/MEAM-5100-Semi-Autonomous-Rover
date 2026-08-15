@@ -68,7 +68,7 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 ### CAD drawings
 <p label="Model Training Metrics and Confusion Matrix" align="center">
-  <img src="Images/CAD_drawing_1.png" alt="CAD1" width="40%" />
+  <img src="Images/CAD_drawing_1.png" alt="CAD1" width="42%" />
   <img src="Images/CAD_drawing_2.png" alt="CAD2" width="50%" />
 </p>
 
