@@ -1,6 +1,6 @@
 # Semi-Autonomous Arena PvP Battlebot
 [![Board](https://img.shields.io/badge/Board-ESP32S3-brightgreen)]()
-[![Framework](https://img.shields.io/badge/Controls-PID%20Closed-Loop%20Control-orange)]()
+[![Controls](https://img.shields.io/badge/Controls-PID%20Closed-Loop%20Control-orange)]()
 [![Model](https://img.shields.io/badge/Model-MobileNetV2%20%CE%B1%3D0.50-yellow)]()
 [![Accuracy](https://img.shields.io/badge/INT8%20Accuracy-99.74%25-blue)]()
 
