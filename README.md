@@ -73,8 +73,8 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 <p align="center">
   <strong>CAD Drawings</strong><br><br>
-  <img src="Images/CAD_drawing_1.png" alt="CAD1" style="width: 50.77%;" />
-  <img src="Images/CAD_drawing_2.png" alt="CAD2" style="width: 39.23%;" />
+  <img src="Images/CAD_drawing_1.png" alt="CAD1" style="width: 39.23%;" />
+  <img src="Images/CAD_drawing_2.png" alt="CAD2" style="width: 50.77%;" />
 </p>
 
 
