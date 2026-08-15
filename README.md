@@ -57,16 +57,20 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 ---
 
-## Design Diagrams
+## Design
 
 ### System Block Diagram
 <p align="center"><img src="Images/Block_Diagram.PNG" alt="Block Diagram" width="60%"></p>
 
-### Electrical Wiring Diagram
-<p align="center"><img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="60%"></p>
+### Electrical Wiring
+<p label="Wiring" align="center">
+  <img src="Images/Circuit_Diagram.PNG" alt="Circuit Diagram" width="42%" />
+  <img src="Images/Disassembled1.PNG" alt="Wiring" width="50%" />
+</p>
+
 
 ### CAD drawings
-<p label="Model Training Metrics and Confusion Matrix" align="center">
+<p label="CAD Drawings" align="center">
   <img src="Images/CAD_drawing_1.png" alt="CAD1" width="42%" />
   <img src="Images/CAD_drawing_2.png" alt="CAD2" width="50%" />
 </p>
