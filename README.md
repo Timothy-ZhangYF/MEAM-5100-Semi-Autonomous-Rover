@@ -16,8 +16,12 @@ specific rulesets and strategic highlights described in sections below
 
 https://youtu.be/5AlRQYtUSHg
 
-
-IMAGES PUT 
+<p align="center">
+  <strong>Robot Showcase</strong><br><br>
+  <img src="Images/Front_view.PNG" alt="Front" style="width: 30%;" />
+  <img src="Images/Perspective_view.PNG" alt="Perspective" style="width: 30%;" />
+  <img src="Images/Top_view.PNG" alt="Top" style="width: 30%;" />
+</p>
 
 ---
 
