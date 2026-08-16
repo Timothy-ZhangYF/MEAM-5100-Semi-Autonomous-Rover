@@ -24,6 +24,10 @@ Specific rulesets and strategic highlights described in sections below
   <img src="Images/Top_view.PNG" alt="Top" style="width: 30%;" />
 </p>
 
+Additional videos demos
+Manual Drive Demo: https://youtube.com/shorts/q36u4zVWaII?feature=share
+Wall Following Demo: https://youtube.com/shorts/mlVexiKmVw4
+
 ---
 
 ## Game Concept & Arena Rules
