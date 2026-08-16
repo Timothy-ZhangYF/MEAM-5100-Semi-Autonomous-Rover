@@ -104,6 +104,10 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
   <img src="Images/CAD_drawing_2.png" alt="CAD2" style="width: 48.98%;" />
 </p>
 
+### Software
+
+All code used for the competition is included in the [`Code`](Code/) folder.
+
 
 
 
