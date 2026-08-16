@@ -25,7 +25,9 @@ Specific rulesets and strategic highlights described in sections below
 </p>
 
 Additional videos demos
+
 Manual Drive Demo: https://youtube.com/shorts/q36u4zVWaII?feature=share
+
 Wall Following Demo: https://youtube.com/shorts/mlVexiKmVw4
 
 ---
