@@ -13,7 +13,7 @@ An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP 
 
 https://youtu.be/5AlRQYtUSHg
 
-Finale of the battle where our team("Fish tank") won in dominant fashion, taking overall first place. 
+Finale of the battle where our team("Fish tank") won in dominant fashion, taking overall first place. [View Competition](https://youtu.be/5AlRQYtUSHg)
 
 Specific rulesets and strategic highlights described in sections below
 
@@ -24,11 +24,11 @@ Specific rulesets and strategic highlights described in sections below
   <img src="Images/Top_view.PNG" alt="Top" style="width: 30%;" />
 </p>
 
-Additional videos demos
+Additional videos demos:
 
-Manual Drive Demo: https://youtube.com/shorts/q36u4zVWaII?feature=share
+[Manual Drive Demo](https://youtube.com/shorts/q36u4zVWaII?feature=share)
 
-Wall Following Demo: https://youtube.com/shorts/mlVexiKmVw4
+[Wall Following Demo](https://youtube.com/shorts/mlVexiKmVw4)
 
 ---
 
@@ -107,6 +107,8 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 CAD files are included in the [`CAD`](CAD/) folder.
 
 View On: [Onshape](https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8344eba45963f6586a078f) (right click and open as new tab to avoid 403 error)
+
+<a href="https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8344eba45963f6586a078f" target="_blank" rel="noreferrer noopener" referrerpolicy="no-referrer">Open Onshape Design</a>
 
 
 ### Software
