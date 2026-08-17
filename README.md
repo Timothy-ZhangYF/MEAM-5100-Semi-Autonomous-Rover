@@ -104,9 +104,11 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
   <img src="Images/CAD_drawing_2.png" alt="CAD2" style="width: 48.98%;" />
 </p>
 
+CAD files are included in the [`CAD`](CAD/) folder.
+
 ### Software
 
-All code used for the competition is included in the [`Code`](Code/) folder.
+Code used for the competition included in the [`Code`](Code/) folder.
 
 
 
