@@ -11,7 +11,7 @@ An autonomous and remote-controlled combat robot engineered for a 2v2 arena PvP 
 
 ## Demo
 
-Finale of the battle where our team("Fish tank") won in dominant fashion, taking overall first place. [View Competition](https://youtu.be/5AlRQYtUSHg)
+Finale of the battle where our team("Fish tank") won in dominant fashion, taking overall first place. **[View Competition](https://youtu.be/5AlRQYtUSHg)**
 
 Specific rulesets and strategic highlights described in sections below
 
