@@ -108,6 +108,7 @@ CAD files are included in the [`CAD`](CAD/) folder.
 
 View On: [Onshape](https://tinyurl.com/cdpk9hmk)
 
+https://tinyurl.com/cdpk9hmk
 
 ### Software
 
