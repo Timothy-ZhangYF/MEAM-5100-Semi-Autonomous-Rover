@@ -110,6 +110,8 @@ View On: [Onshape](https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/
 
 <a href="https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8341822b53919502dbd2f6" rel="noreferrer noopener">View Onshape Document</a>
 
+<a href="https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8341822b53919502dbd2f6" rel="noreferrer noopener" referrerpolicy="no-referrer" target="_blank">Open Onshape Design</a>
+
 
 ### Software
 
