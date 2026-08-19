@@ -104,8 +104,7 @@ Without the physical payload, we adapted our high-torque drive and low-packet te
 
 CAD files are included in the [`CAD`](CAD/) folder.
 
-View On: [Onshape](https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8344eba45963f6586a078f) (right click and open as new tab to avoid 403 error)
-
+View On: [Onshape](https://cad.onshape.com/documents/e0dc42579e68e93aef5d59ea/w/8c1eb1d30bdd08e229fc6ead/e/ef994ec9ed3aac58ad461918?renderMode=0&uiState=6a8344eba45963f6586a078f)
 
 ### Software
 
